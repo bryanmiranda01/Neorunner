@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57c1bcfa94ef7f5429b3b2bfe84cbe31
+guid: c96c92f5490f3c345b4133101a9a7217
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: LevelTilemap
+  - name: WallCorner2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -128,9 +128,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 128
-      height: 64
-    spriteID: 8034dd7bb80dbab4bbc69132fe5c667c
+      width: 32
+      height: 32
+    spriteID: 2fe12e1fcd121514faa532b208b80c92
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,23 +142,23 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1959595866
-    name: LevelTilemap
+    guid: -1013440749
+    name: WallCorner2
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: LevelTilemap
+    - name: WallCorner2
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 128
-        height: 64
-      spriteId: 8034dd7bb80dbab4bbc69132fe5c667c
+        width: 32
+        height: 32
+      spriteId: 2fe12e1fcd121514faa532b208b80c92
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 32, y: 32}
