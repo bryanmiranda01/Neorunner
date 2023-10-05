@@ -21,7 +21,7 @@ Mechanics of Neorunner include
 • One life and limited powerups to clear the level
 
 #### Development tools:
-- [Unity](https://unity.com))
+- [Unity](https://unity.com)
 
 #### Design tools:
 - [Aseprite](https://www.aseprite.org)
