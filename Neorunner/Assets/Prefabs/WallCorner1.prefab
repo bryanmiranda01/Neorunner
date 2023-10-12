@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner1
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: d71da1119ddffbf4e8a92e75d3b0438b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: d71da1119ddffbf4e8a92e75d3b0438b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 567524095
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d71da1119ddffbf4e8a92e75d3b0438b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

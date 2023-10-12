@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flooring
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a9f68e5f23bdadc48921ac6994c7f9ed, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: a9f68e5f23bdadc48921ac6994c7f9ed, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 567524095
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a9f68e5f23bdadc48921ac6994c7f9ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

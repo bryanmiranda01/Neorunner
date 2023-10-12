@@ -10,7 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 9229ff4551cd0b44d94523f57e25a824, type: 3}
       propertyPath: m_Name
-      value: New Prefab
+      value: Lightwall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 9229ff4551cd0b44d94523f57e25a824, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 9229ff4551cd0b44d94523f57e25a824, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 567524095
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 9229ff4551cd0b44d94523f57e25a824, type: 3}
       propertyPath: m_LocalPosition.x
