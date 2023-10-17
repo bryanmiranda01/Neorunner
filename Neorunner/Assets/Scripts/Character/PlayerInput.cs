@@ -6,9 +6,10 @@ public class PlayerInput : MonoBehaviour
 {
     DiscreteMovement discretemovement;
     public Rigidbody2D rb;
-    public float jumpAmount = 35;
-    public float gravityScale = 10;
+    public float jumpAmount = 25;
+    public float gravityScale = 40;
     public float fallingGravityScale = 40;
+    public float speed = 60;
 
     void Awake () {
         discretemovement = GetComponent<DiscreteMovement>();
@@ -20,13 +21,13 @@ public class PlayerInput : MonoBehaviour
         Vector3 vel = Vector3.zero;
 
         if(Input.GetKey(KeyCode.A)) {
-            vel.x = -1;
+            vel.x = -60;
         }
         else if(Input.GetKey(KeyCode.D)) {
-            vel.x = 1;
+            vel.x = 60;
         }
         else if(Input.GetKey(KeyCode.S)) {
-            vel.y = -1;
+            vel.y = -60;
         }
         discretemovement.MoveTransform(vel);
 
