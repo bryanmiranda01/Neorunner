@@ -4,13 +4,59 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    DiscreteMovement discretemovement;
-    public Rigidbody2D rb;
-    public float jumpAmount = 25;
-    public float gravityScale = 40;
-    public float fallingGravityScale = 40;
-    public float speed = 60;
+    Rigidbody2D rb;
+    private bool isMoving = false;
 
+    float verticalInput;
+    float horizontalInput;
+
+    float speed = 64f;
+    bool facingRight = true;
+
+    private Animator playerAnimation;
+    
+    
+
+    void Start () {
+
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        rb.gravityScale = 100;
+        playerAnimation = GetComponent<Animator>();
+    }
+
+    void FixedUpdate () {
+        verticalInput = Input.GetAxisRaw("Vertical");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        if (horizontalInput != 0) {
+
+            rb.AddForce(new Vector2(horizontalInput * speed, 0f));
+        }
+
+        if (horizontalInput > 0 && !facingRight) {
+            Flip();
+        }
+
+        if (horizontalInput < 0 && facingRight) {
+            Flip();
+        }
+
+        playerAnimation.SetFloat("speed", Mathf.Abs(rb.velocity.x));
+    }
+
+
+    void Flip () {
+
+       transform.Rotate(0f, 180f, 0f);
+
+        facingRight = !facingRight;
+    }
+}
+
+
+
+    /*DiscreteMovement discretemovement;
+      bool facingRight;
     void Awake () {
         discretemovement = GetComponent<DiscreteMovement>();
     }
@@ -22,27 +68,25 @@ public class PlayerInput : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A)) {
             vel.x = -60;
+            
         }
         else if(Input.GetKey(KeyCode.D)) {
             vel.x = 60;
+            
         }
         else if(Input.GetKey(KeyCode.S)) {
             vel.y = -60;
         }
         discretemovement.MoveTransform(vel);
+    }
 
-        //Jump
-         if (Input.GetKeyDown(KeyCode.W))
-        {
-            rb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
-        }
-        if(rb.velocity.y >= 0)
-        {
-            rb.gravityScale = gravityScale;
-        }
-        else if (rb.velocity.y < 0)
-        {
-            rb.gravityScale = fallingGravityScale;
-        }
+    void Flip () {
+
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
     }
 }
+*/
