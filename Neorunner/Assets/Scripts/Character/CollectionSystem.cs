@@ -18,6 +18,6 @@ public class CollectionSystem : MonoBehaviour
             triggerObject.SetActive(true);
             escapeText.SetActive(true);
         }    
-        collectionText.text = "Objective retrieved";
+        //collectionText.text = "Objective retrieved";
     }
 }
