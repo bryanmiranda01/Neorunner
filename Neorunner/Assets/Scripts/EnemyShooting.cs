@@ -8,11 +8,12 @@ public class EnemyShooting : MonoBehaviour
     public Transform bPosition;
 
     private float timer;
-    // Start is called before the first frame update
+    /* Start is called before the first frame update
     void Start()
     {
         
     }
+    */
 
     // Update is called once per frame
     void Update()
