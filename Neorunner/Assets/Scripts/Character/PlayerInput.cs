@@ -10,7 +10,7 @@ public class PlayerInput : MonoBehaviour
     float verticalInput;
     float horizontalInput;
 
-    float speed = 64f;
+    float speed = 60f;
     bool facingRight = true;
 
     private Animator playerAnimation;
