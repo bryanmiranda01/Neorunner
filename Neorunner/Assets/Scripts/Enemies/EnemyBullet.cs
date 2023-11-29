@@ -17,9 +17,8 @@ public class EnemyBullet : MonoBehaviour
         Vector3 direction = player.transform.position - transform.position;
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
-        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -27,7 +26,7 @@ public class EnemyBullet : MonoBehaviour
         timer += Time.deltaTime;
 
         if(timer > 10) {
-
+            Debug.Log("Bullet has despawned");
             Destroy(gameObject);
         }
         
@@ -37,8 +36,10 @@ public class EnemyBullet : MonoBehaviour
 
         if(other.gameObject.CompareTag("Player")) {
 
+            Debug.Log("Bullet has collided with players");
             Destroy(gameObject);
         }
         
     }
+    
 }

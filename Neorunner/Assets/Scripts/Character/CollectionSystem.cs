@@ -17,7 +17,8 @@ public class CollectionSystem : MonoBehaviour
 
             triggerObject.SetActive(true);
             escapeText.SetActive(true);
+            //trigger.enable = true;
         }    
-        //collectionText.text = "Objective retrieved";
+        collectionText.text = amountCollected + "/" + finalAmount;
     }
 }

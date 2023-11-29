@@ -8,7 +8,7 @@ public class LevelComplete : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.CompareTag("Player")) {
 
-           SceneManager.LoadScene("MainMenu");
+           SceneManager.LoadScene("Level 2");
         }
     }
 }

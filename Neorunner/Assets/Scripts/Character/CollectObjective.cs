@@ -11,14 +11,11 @@ public class CollectObjective : MonoBehaviour
 
     if(other.CompareTag("Player")){
 
-        //Audio player, still looking for SFX
-        //pickup.Play();
-
+        collect.Play();
         CollectionSystem.amountCollected = CollectionSystem.amountCollected + 1;
         thisobject.SetActive(false);
 
+        
     }
-    
    }
-    
 }
