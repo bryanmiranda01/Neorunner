@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     Rigidbody2D rb;
-    private bool isMoving = false;
+    //private bool isMoving = false;
 
     float verticalInput;
     float horizontalInput;
