@@ -11,7 +11,7 @@ public class PlayerDeath : MonoBehaviour
 
             
             SceneManager.LoadScene("MainMenu");
-            Destroy(gameObject); 
+            
 
         }
     }

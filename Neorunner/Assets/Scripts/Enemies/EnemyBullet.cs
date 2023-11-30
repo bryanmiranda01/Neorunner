@@ -37,7 +37,6 @@ public class EnemyBullet : MonoBehaviour
         if(other.gameObject.CompareTag("Player")) {
 
             Debug.Log("Bullet has collided with players");
-            Destroy(gameObject);
         }
         
     }
