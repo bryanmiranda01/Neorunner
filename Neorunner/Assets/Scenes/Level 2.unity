@@ -2832,7 +2832,7 @@ GameObject:
   - component: {fileID: 364197129}
   m_Layer: 0
   m_Name: Skybox
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18562,7 +18562,7 @@ PrefabInstance:
     - target: {fileID: 2412972336519441667, guid: 4c47ad4ae224dc24f8d880cfba9b02b3, type: 3}
       propertyPath: point2
       value: 
-      objectReference: {fileID: 971000109}
+      objectReference: {fileID: 542138405}
     - target: {fileID: 2437580170663555400, guid: 4c47ad4ae224dc24f8d880cfba9b02b3, type: 3}
       propertyPath: bulletPos
       value: 
